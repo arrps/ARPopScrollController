@@ -1,0 +1,14 @@
+PODS:
+  - ARPopScrollController (0.1.0)
+
+DEPENDENCIES:
+  - ARPopScrollController (from `../`)
+
+EXTERNAL SOURCES:
+  ARPopScrollController:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ARPopScrollController: 93ca230049b8692354becba1acd6d62a678be952
+
+COCOAPODS: 0.34.4

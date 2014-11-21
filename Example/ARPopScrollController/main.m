@@ -2,8 +2,8 @@
 //  main.m
 //  ARPopScrollController
 //
-//  Created by Purushottam Shukla on 11/18/2014.
-//  Copyright (c) 2014 Purushottam Shukla. All rights reserved.
+//  Created by Puru Shukla on 11/18/2014.
+//  Copyright (c) 2014 Puru Shukla. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

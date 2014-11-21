@@ -1,6 +1,6 @@
 # ARPopScrollController
 
-[![CI Status](http://img.shields.io/travis/Purushottam Shukla/ARPopScrollController.svg?style=flat)](https://travis-ci.org/Purushottam Shukla/ARPopScrollController)
+[![CI Status](http://img.shields.io/travis/Puru Shukla/ARPopScrollController.svg?style=flat)](https://travis-ci.org/Puru Shukla/ARPopScrollController)
 [![Version](https://img.shields.io/cocoapods/v/ARPopScrollController.svg?style=flat)](http://cocoadocs.org/docsets/ARPopScrollController)
 [![License](https://img.shields.io/cocoapods/l/ARPopScrollController.svg?style=flat)](http://cocoadocs.org/docsets/ARPopScrollController)
 [![Platform](https://img.shields.io/cocoapods/p/ARPopScrollController.svg?style=flat)](http://cocoadocs.org/docsets/ARPopScrollController)
@@ -20,7 +20,7 @@ it, simply add the following line to your Podfile:
 
 ## Author
 
-Purushottam Shukla, puru.raj20@gmail.com
+Puru Shukla, puru.raj20@gmail.com
 
 ## License
 

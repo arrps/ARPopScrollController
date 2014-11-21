@@ -1,14 +1,17 @@
 Pod::Spec.new do |s|
   s.name             = "ARPopScrollController"
   s.version          = "0.1.0"
-  s.summary          = "A beautiful page scroll controller class."
+  s.summary          = "A short description of ARPopScrollController."
   s.description      = <<-DESC
-                       ARPopScrollController allows you to present user with a beautiful horizontal scrolling interface of a collection of UIViews. The View is customizable according to your need. Suports all resolution iPhones and iPads.
+                       An optional longer description of ARPopScrollController
+
+                       * Markdown format.
+                       * Don't worry about the indent, we strip it!
                        DESC
   s.homepage         = "https://github.com/arrpsh/ARPopScrollController"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Puru Shukla" => "puru.raj20@gmail.com" }
+  s.author           = { "Purushottam Shukla" => "puru.raj20@gmail.com" }
   s.source           = { :git => "https://github.com/arrpsh/ARPopScrollController.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '7.0'
