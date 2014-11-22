@@ -41,21 +41,7 @@
 
 -(UIView*)popScroll:(ARPopScrollView *)popScrollView viewForItemAtIndex:(NSUInteger)itemIndex{
     UIImage* image = [UIImage imageNamed:@"TestImage"];
-    
-    
-    /****  NOTE:
-     Applying filter on image are slower. This is only for demo purpose.
-     *****/
-    //    CIImage* ciimage = [CIImage imageWithCGImage:image.CGImage];
-    //    CIContext *context = [CIContext contextWithOptions:nil];               // 1
-    //    CIFilter *filter = [CIFilter filterWithName:@"CIPhotoEffectProcess"];           // 3
-    //    [filter setValue:ciimage forKey:kCIInputImageKey];
-    //    CIImage *result = [filter valueForKey:kCIOutputImageKey];              // 4
-    //    CGRect extent = [result extent];
-    //    CGImageRef cgImage = [context createCGImage:result fromRect:extent];   // 5
-    //    image = [UIImage imageWithCGImage:cgImage];
-    
-    
+
     UIImageView* imageView = [[UIImageView alloc] initWithImage:image];
     UIView* contentView = popScrollView.contentView;
     CGFloat xPadding = 10.0;
@@ -74,13 +60,14 @@
     UIImageView* overlayView = [[UIImageView alloc] initWithFrame:CGRectMake(0, overlayTop, w, 70)];
     overlayView.image = overlayImage;
     
-    UILabel* testLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 20, w, 20)];
-    testLabel.text = [NSString stringWithFormat:@"This is a test label%lu", (unsigned long)itemIndex];
+    UILabel* testLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, w, 50)];
+    testLabel.numberOfLines = 5;
+    testLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    testLabel.text = [NSString stringWithFormat:@"This %lu view, customize this view however you want.", (unsigned long)itemIndex];
     testLabel.textColor = [UIColor whiteColor];
     
     [overlayView addSubview:testLabel];
     [imageView addSubview:overlayView];
-    
     
     NSDictionary* views = NSDictionaryOfVariableBindings(imageView, overlayView);
     NSArray* vertConstraints = [NSLayoutConstraint constraintsWithVisualFormat:@"V:[overlayView]|"
