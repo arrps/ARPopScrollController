@@ -26,12 +26,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 The easiest way to use ARPopScrollController is to derive your UIViewController class from ARPopScrollViewController and
 then implement following ARPopScrollViewDataSource/ARPopScrollViewDelegate Methods:
 
-##ARPopScrollViewDataSource
--(NSUInteger)numberOfItemsInPopScrollView:(ARPopScrollView*)popScrollView
--(UIView*)popScroll:(ARPopScrollView*)popScrollView viewForItemAtIndex:(NSUInteger)itemIndex
-
-##ARPopScrollViewDelegate
--(void)popScrollView:(ARPopScrollView*)popScrollView didSelectView:(UIView*)view itemAtIndex:(NSUInteger)itemIndex
+	-(NSUInteger)numberOfItemsInPopScrollView:(ARPopScrollView*)popScrollView
+	-(UIView*)popScroll:(ARPopScrollView*)popScrollView viewForItemAtIndex:(NSUInteger)itemIndex
+	-(void)popScrollView:(ARPopScrollView*)popScrollView didSelectView:(UIView*)view itemAtIndex:(NSUInteger)itemIndex
 
 ## Author
 
